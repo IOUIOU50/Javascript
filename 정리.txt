@@ -1,0 +1,32 @@
+*HTML확장자?
+ㅇ 자바스크립트는 .js확장자로 저장돼 독립적으로 운영될수도 있고
+.html확장자로 저장되어 내부에서 '<script>'태그 자바스크립트
+문법을 이용하여 "여기부터는 자바스크립트 언어로 동작합니다~"
+하고 웹페이지에게 알려준다.
+
+*숫자와 문자
+ㅇ 따옴표가 없는 숫자 -> 숫자로 취급
+  - 사칙연산 가능. 나눗셈은 소숫점 이하까지 출력
+  - 자바스크립트 라이브러리의 Math를 이용하면 복잡한 연산 사용가능
+	Math.pow(x, y) //제곱연산
+	Math.round(x) //반올림
+	Math.ceil(x) //올림
+	Math.floor(x) //내림
+	Math.sqrt(x) //제곱근
+	Math.random() //0~1.0사이의 난수생성
+
+*문자(열)
+ㅇ 큰/작은따옴표 상관없음. 단, 큰따옴표로 시작했으면 큰따옴표, 
+작은따옴표로 시작했으면 작은따옴표로 감싸줘야함
+	alert('be careful!')  //O
+	alert("be careful!") //O
+	alert("be careful!') //X
+
+*document.write()
+ㅇ html에서는 아무런 표시 없이 텍스트를 치면 그 텍스트가 찍히지만
+.js파일이나 <script>안에서 페이지에 텍스트를 표시하기 위해서는 
+document.write()메소드를 이용
+
+* 작은따옴표를 문자열 내에 사용하고싶다?
+	ex) document.write('munini's left foot law')
+	=> document.write('munini\'s left foot law')
